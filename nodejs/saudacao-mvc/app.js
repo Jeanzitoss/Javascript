@@ -19,6 +19,9 @@ app.use('/users', usersRoutes);
 const mapRoutes = require('./routes/map');
 app.use('/map', mapRoutes);
 
+const produtosRoutes = require('./routes/produtos');
+app.use('/produtos', produtosRoutes);
+
 // Servidor
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
